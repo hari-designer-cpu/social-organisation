@@ -1,0 +1,450 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+/* General Styles */
+body {
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+background: #f4f4f9;
+color: #333;
+}
+.marquee-container {
+padding: 10px;
+overflow: hidden;
+white-space: nowrap;
+}
+
+.marquee-text {
+display: inline-block;
+animation: marquee 25s linear infinite;
+color: white;
+}
+@keyframes marquee {
+from {
+transform: translateX(200%);
+}
+to {
+transform: translateX(-200%);
+}
+}
+.logo{
+width: 10px;
+height: 10px;
+}
+.logo img{
+width: 120px;
+}
+.logo p{
+width: 10px;
+color: black
+}
+.slider {
+position: relative;
+width: 100%;
+height: 100vh;
+}
+
+.slide {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+opacity: 1;
+}
+
+.content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+
+.content p {
+font-size: 1.5rem;
+margin-bottom: 20px;
+}
+
+.content a {
+text-decoration: none;
+background-color: #007bff;
+color: white;
+padding: 10px 20px;
+font-size: 1.2rem;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s;
+}
+
+.content a:hover {
+background-color: #0056b3;
+}
+
+.navigation {
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 10px;
+}
+
+.navigation span {
+width: 15px;
+height: 15px;
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 50%;
+cursor: pointer;
+}
+
+.navigation span.active {
+background-color: rgba(255, 255, 255, 1);
+}
+/* Navigation Bar */
+nav {
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.8);
+padding: 10px 0;
+z-index: 1000;
+text-align: center;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+margin: 0 15px;
+font-size: 1.2rem;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+nav a:hover {
+color: #007bff;
+}
+
+/* Section Styles */
+section {
+padding: 60px 50px;
+padding-inline: 10%;
+text-align: center;
+}
+
+section:nth-child(even) {
+background: #e9ecef;
+}
+
+section h2 {
+font-size: 2.5rem;
+font-size: 2.5rem;
+color: #15a0e0;
+margin-bottom: 20px;
+}
+section h3{
+padding: 20px;
+color: #000000;
+}
+
+.donate button {
+margin-top:  20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 1rem 2rem;
+font-size: 1.2rem;
+cursor: pointer;
+border-radius: 5px;
+}
+.cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+margin-top: 30px;
+}
+
+.card {
+background: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+width: 300px;
+overflow: hidden;
+transition: transform 0.3s ease;
+}
+
+.card:hover {
+transform: scale(1.05);
+}
+
+.card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.card h3 {
+color: #007bff;
+font-size: 1.5rem;
+margin: 15px 0;
+}
+
+.card p {
+font-size: 1rem;
+margin: 0 15px 15px;
+}
+
+.cta {
+margin-top: 30px;
+}
+
+.cta a {
+text-decoration: none;
+background: #007bff;
+color: white;
+padding: 15px 30px;
+border-radius: 50px;
+font-size: 1.2rem;
+transition: background 0.3s ease;
+}
+
+.cta a:hover {
+background: #0056b3;
+}
+.icon{
+margin-top: 30px;
+}
+
+/* Footer */
+footer {
+background: #343a40;
+color: white;
+text-align: center;
+padding: 20px 0;
+}
+
+footer p {
+margin: 0;
+}
+.newsletter {
+background: #f8f9fa;
+padding: 2rem 1rem;
+text-align: center;
+}
+
+.newsletter input {
+padding: 0.8rem;
+width: 250px;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.newsletter button {
+padding: 0.8rem 1rem;
+background: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+}
+
+.newsletter button:hover {
+background: #0056b3;
+}
+.newsletter input {
+width: 200px;
+}
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .logo img {
+        width: 80px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .content a {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section h3 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 5px 0;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .content a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    section {
+        padding: 20px 5px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter input {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .newsletter button {
+        padding: 0.6rem;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.3rem;
+    }
+
+    .content a {
+        font-size: 1.1rem;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .slider {
+        height: 60vh; /* Reduce height for tablets */
+    }
+
+    .slide {
+        background-size: contain; /* Contain image within the slide for smaller screens */
+        background-position: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 50vh; /* Further reduce height for mobile devices */
+    }
+
+    .slide {
+        background-size: contain; /* Ensure the entire image fits */
+        background-position: top center; /* Adjust positioning for smaller screens */
+    }
+}

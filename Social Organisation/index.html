@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>Bright Futures Initiative</title>
+<link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+ 
+  
+    <div class="slider">
+        <section id="home"> <div class="slide active" style="background-image: url('index.png');"></div></section>
+        <div class="slide" style="background-image: url('index.bg.jpg');"></div>
+        <div class="slide" style="background-image: url('index.img.jpg');"></div>
+
+        <div class="content">
+          <h1>Building a Brighter Tomorrow</h1>
+            <p>Focused on empowering underprivileged individuals and communities.</p>
+            <a href="#about">Learn More</a>
+        </div>
+
+        <div class="navigation">
+            <span onclick="changeSlide(0)" class="active"></span>
+            <span onclick="changeSlide(1)"></span>
+            <span onclick="changeSlide(2)"></span>
+        </div>
+    </div>
+  
+    <nav>
+        <div class="marquee-container">
+            <div class="marquee-text">Welcome to the Bright Futures Initiative! Together, we can create a brighter tomorrow.</div>
+          </div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#mission">Mission</a>
+        <a href="#donate">Donate</a>
+        <a href="#programs">Programs</a>
+        <a href="#contact">Contact</a>
+        <div class="logo">
+            <img src="img-removebg-preview.png" alt="Webdite logo">
+        </div>
+    </nav>
+
+
+    <section id="about">
+        <h2>About Us</h2>
+        
+      <h3>Your Impact Begins with Thaagam Foundation </h3> 
+        <p> At Thaagam Foundation, we're committed to creating a meaningful and lasting impact that transcends the ordinary. Our passion for humanitarian aid, community empowerment, and individual dignity drives our mission. Our initiatives are carefully crafted to address immediate needs and foster sustainable development.
+
+            In addition to our extensive programs, we're equally devoted to ensuring your involvement is impactful and fulfilling. Our platform is designed with your convenience in mind, offering secure donations and a responsive support team to assist you every step of the way </p>
+    </section>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <h3>Social change organizations</h3>
+        <p>These organizations aim to change entrenched ideas, dismantle oppressive systems of power, and find solutions to problems. They do this by developing strategies, supporting social justice values, and conducting organizational assessments.</p>
+        <h3>Community social organizations</h3>
+        <p>These organizations help communities achieve their desired results for individuals and families. They help people demonstrate resiliency in the face of adversity.</p>
+        <h3>Businesses with social missions</h3>
+        <p>These businesses have a social mission that drives their decisions and communicates their values to customers, employees, and stakeholders. For example, CommonBond partners with Pencils of Promise to provide schools and technology to young students in developing countries. TOMS donates $1 for every $3 it makes in net annual profits to various nonprofit organizations.</p>
+    </section>
+    <section id="donate">
+        <h2>Donate</h2>
+        <p>Your contributions can make a real difference. Every donation helps us bring hope and support to those in need</p>
+        <div class="donate">
+            <button>Donate Now</button>
+          </div>
+    </section>
+
+    <section id="programs">
+        <h2>Our Programs</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1358014313/photo/group-of-elementary-students-having-computer-class-with-their-teacher-in-the-classroom.jpg?s=612x612&w=0&k=20&c=3xsykmHXFa9ejL_sP2Xxiow7zdtmKvg15UxXFfgR98Q=" alt="Education Program">
+                <h3>Education for All</h3>
+                <p>Providing resources and opportunities for quality education in remote areas.</p>
+            </div>
+            <div class="card">
+                <img src="https://static.toiimg.com/thumb/msid-64283203,width-400,resizemode-4/64283203.jpg" alt="Healthcare Program">
+                <h3>Healthcare Access</h3>
+                <p>Delivering healthcare solutions to communities in need.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTD6fG_qt2okpnx-Xo3aj9zfgFwyM95sIj3A&s" alt="Sustainability Program">
+                <h3>Environmental Action</h3>
+                <p>Promoting sustainability and ecological balance.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@brightfuturesinitiative.org</p>
+        <p>Phone: <i class="fas fa-phone-alt" style="font-size: 24px; color: #4CAF50;"></i> 
+            <span style="margin-left: 10px;">+91 12345 67890</span></p>
+        
+        <div class="cta">
+            <a href="#">Join Our Cause</a>
+         
+             <section class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Stay updated with our latest news and initiatives.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </div>
+        <div class="icon">
+            <a href=""> <i class="fab fa-linkedin" style="font-size: 32px; color: #0A66C2; margin: 10px;"></i></a>
+            <a href=""><i class="fab fa-facebook" style="font-size: 32px; color: #3b5998;  margin: 10px;"></i></a>
+            <a href=""><i class="fab fa-twitter" style="font-size: 32px; color: #1DA1F2;  margin: 10px;"></i></a>
+           <a href=""><i class='fab fa-whatsapp' style='font-size:36px; color: #1ed124;'></i></a>
+            
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; Bright Futures Initiative. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.navigation span');
+        let currentIndex = 0;
+
+        function changeSlide(index) {
+            slides[currentIndex].classList.remove('active');
+            dots[currentIndex].classList.remove('active');
+            currentIndex = index;
+            slides[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+        }
+
+        function autoSlide() {
+            let nextIndex = (currentIndex + 1) % slides.length;
+            changeSlide(nextIndex);
+        }
+
+        setInterval(autoSlide, 5000); // Change slide every 5 seconds
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
